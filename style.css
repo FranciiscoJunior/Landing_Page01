@@ -36,6 +36,7 @@ header img{
 header nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 1rem auto 0;
 }
 
 nav a {
@@ -78,8 +79,6 @@ h1{
     font-size: 3rem;
     line-height: 105%;
 }
-
-
 
 h2{
     font-size: 2.5rem;
@@ -126,9 +125,9 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 1.25rem;
-    margin-top: 8rem;
-    margin-bottom: 4rem;
+    gap: 1.0rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 
 .card{
@@ -160,7 +159,7 @@ h2{
 
 footer{
     border-bottom: 0;
-    padding: 1rem 0.55rem 2rem;
+    padding: 1rem 1.25rem 4rem;
 }
 
 footer nav a{
@@ -170,7 +169,7 @@ footer nav a{
 
 .newslatter-form label{
     display: block;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .newslatter-form input{
@@ -209,4 +208,73 @@ footer nav a{
 
 .text-center{
     text-align: cente;
+}
+
+/*Responsividade*/
+
+@media screen and (min-width: 48rem){
+    header nav{
+        display: block;
+        text-align: center;
+    }
+    .cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card:nth-child(2n){
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    header div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header img,
+    header nav,
+    header .button{
+        margin: 0;
+    }
+}
+@media screen and (min-width: 72rem){
+    h1, h2{
+        font-size: 4rem;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        margin: 8 auto;
+        max-width: 72rem;
+    }
+    .container.row-reverse{
+        flex-direction: row-reverse;
+    }
+
+    .about-column{
+        flex: 2;
+    }
+
+    .about-column p{
+        font-size: 1.25rem;
+        nax-width: 16rem;
+    }
+
+    footer nav{
+        flex: 1;
+    }
+
+    .newslatter-form{
+        flex: 3;
+    }
+}
+
+@media screen and (nin-width: 0rem) {
+    .container{
+        nax-width: 90rem;
+    }
 }
