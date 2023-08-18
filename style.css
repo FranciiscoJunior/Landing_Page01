@@ -1,4 +1,3 @@
-
 *{
     box-sizing: border-box;
     font-family: 'Bacasime Atique', sans-serif;
@@ -152,7 +151,7 @@ h2{
 .card a{
     display: block;
     margin: 3rem 0 0 auto;
-    width: fit-content;
+    width: "";
 }
 
 /*rodapé*/
